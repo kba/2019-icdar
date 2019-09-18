@@ -25,6 +25,8 @@ slideOptions:
 
 ### a multi-engine Open Source OCR training system
 
+<img src="http://ocr-d.de/sites/default/files/Header1-Text-gold_4.png"/>
+
 Slides: https://hackmd.io/@6BN9tdLhQSWPUeUaTvNkaw/SyiQKUCUH
 
 ---
@@ -89,11 +91,75 @@ tessera<strong class="kb-hi">ct</strong>
 
 # Training
 
+----
+
+## Basic Approach
+
+* Produce line-based Ground Truth (GT)
+* Feed into training engine:
+  * line text and image from GT
+  * neural network structure
+  * language model
+
+----
+
+## Different Conventions (examples)
+
+* File name and folder structure schemes
+* Neural network setup
+* Training stop conditions
+
+----
+
+## Case in Point: tesstrain
+
+* Started in 2018 as Makefile to make tesseract 4.0 training manageable
+* Grown to include lots of optimizations
+* Embraced by tesseract maintainers as of August 2019
+
 ---
 
 <!-- .slide: data-background="https://s3-us-west-1.amazonaws.com/scifindr/articles/images/cephalopods/cephalopods-plate_franz-anthony.jpg" -->
 
 # Standardize!
+
+----
+
+## Why?
+
+* Who knows how `en-default.pyrnn.gz` was trained?
+* Synthetic data? Real line images? Both?
+* How would `en-default.pyrnn.gz` perform compared to Calamari trained on the same data?
+* Engines are evolving :tada: so models must too
+
+----
+
+## Ground Truth
+
+
+* OCR-D has been developing GT specifications
+* Training has different requirements:
+  * line-based
+  * data integrity is crucial
+  * metadata to track provenance
+* => Engine-agnostic container format for line GT
+
+----
+
+## Training
+
+* Many parameters equivalent across engines => Common API
+* Details matter => JSON Schema
+* Track progress and performance uniformly
+
+----
+
+## Evaluation
+
+* Decouple evaluation from training
+* Test snapshots of models by predicting GT
+* Currently CER and WER
+* Synergies with [qurator-spk/dinglehopper](https://github.com/qurator-spk/dinglehopper), [eddieantonio/ocreval](https://github.com/eddieantonio/ocreval) and [impactcentre/ocrevalUAtion](https://github.com/impactcentre/ocrevalUAtion)
 
 ---
 
@@ -102,12 +168,50 @@ tessera<strong class="kb-hi">ct</strong>
 
 # Architecture
 
+----
+
+## Caveat
+
+* okralact - the software - is fully working but a prototype
+* What we want to push with okralact
+  * engine-spanning conventions
+  * harmonized network structure specification
+  * better documentation and provenance of trainied models
+
+----
+
+## Tech stack
+
+* Redis Queues for training and evaluation
+* Different JSON Schemas to model Common API and engine-specifics
+* Python/Flask for a simple web interface
+
+----
+
+<!-- .slide: data-background="./okralact-manual.png" -->
+
 ---
 
-### Thank you! :sheep: 
+# Conclusion
 
-You can find me on
+* Engine-agnostic training interfaces:
+  * possible
+  * necessary
+  * in everybody's interest
 
-- GitHub
-- Twitter
-- or email me
+Let's do this!
+
+<img src="https://i.kym-cdn.com/entries/icons/thumb/000/001/987/fyeah.jpg?1269221733"/>
+
+---
+
+### Thank you!
+
+<img src="http://kba.cloud/ocrd-2018-07-11/figures/end-man.png" height="300"/>
+
+* Okralact: https://github.com/OCR-D/okralact
+* OCR-D GitHub Org: https://github.com/OCR-D
+* OCR-D Specs and Documentation: https://ocr-d.github.io
+* Chat with us: https://gitter.im/OCR-D/Lobby
+
+Talk to [@kba](https://github.com/kba), [@cneud](https://github.com/cneud), [@seuretm](https://github.com/seuretm) at HIP/ICDAR!
