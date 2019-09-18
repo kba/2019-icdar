@@ -27,7 +27,7 @@ slideOptions:
 
 <img src="http://ocr-d.de/sites/default/files/Header1-Text-gold_4.png"/>
 
-Slides: https://hackmd.io/@6BN9tdLhQSWPUeUaTvNkaw/SyiQKUCUH
+Slides: https://hackmd.io/@kba/SyiQKUCUH
 
 ---
 
@@ -130,7 +130,7 @@ tessera<strong class="kb-hi">ct</strong>
 
 ## Why?
 
-* Who knows how `en-default.pyrnn.gz` was trained?
+* Who knows how [`en-default.pyrnn.gz`](http://www.tmbdev.net/en-default.pyrnn.gz) was trained?
 * Synthetic data? Real line images? Both?
 * How would `en-default.pyrnn.gz` perform compared to Calamari trained on the same data?
 * Engines are evolving :tada: so models must too
@@ -179,13 +179,13 @@ tessera<strong class="kb-hi">ct</strong>
 * What we want to push with okralact
   * engine-spanning conventions
   * harmonized network structure specification
-  * better documentation and provenance of trainied models
+  * better documentation and provenance of trained models
 
 ----
 
 ## Tech stack
 
-* Redis Queues for training and evaluation
+* Redis Queues for training and evaluation backed by Python workers
 * Different JSON Schemas to model Common API and engine-specifics
 * Python/Flask for a simple web interface
 
