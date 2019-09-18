@@ -46,7 +46,7 @@ tessera<strong class="kb-hi">ct</strong>
 
 ![](https://github.com/kba/2019-icdar/raw/master/687474703a2f2f6d61646d2e64666b692e64652f5f6d656469612f6f63726f7075732e706e67)
 
-* @tmbdev since 2007 (ocropy: 2010)
+* [@tmbdev](https://github.com/tmbdev) since 2007 (ocropy: 2010)
 * Standout features:
 	* often used, lots of documentation and wrappers (e.g. Ocrocis)
 	* CLI tools: `ocropus-nlbin`, `ocropus-gtedit` etc.
@@ -57,7 +57,7 @@ tessera<strong class="kb-hi">ct</strong>
 
 ![](https://raw.githubusercontent.com/kba/2019-icdar/master/1*3Trbay07WLA99_czXxn_yA.jpeg?token=AACCXVYDRIMEQMRIPFGF6525RLUU2)
 
-* @mittagessen since 2015
+* [@mittagessen](https://github.com/mittagessen) since 2015
 * Standout features:
 	* Clean codebase, documentation and interfaces
 	* CLI tools: `kraken binarize`, `ketos transcribe` etc.
@@ -69,8 +69,10 @@ tessera<strong class="kb-hi">ct</strong>
 	<img class="light-bg" src="https://avatars1.githubusercontent.com/u/40763252?v=4" height="200"/>
 </p>
 
-* by @CHWick
-* Created: 2018
+* [@CHWick](https://github.com/chwick) since 2018
+* Standout features:
+	* Clean codebase, documentation and interfaces
+	* n-fold training and voting
 
 ----
 
@@ -80,9 +82,10 @@ tessera<strong class="kb-hi">ct</strong>
 	<img src="https://user-images.githubusercontent.com/33478216/39959054-aa7b6138-5614-11e8-9961-25d137dcb43b.jpg" height="200"/>
 </p>
 
-* by @theraysmith
-* Created: 1985 (LSTM: 2016)
-
+* [@theraysmith](https://github.com/theraysmith) since 1985 (LSTM: 2016)
+* Standout features:
+  * Huge user and developer base
+  * Elaborate maintenance, testing, model generation etc.
 
 ---
 
