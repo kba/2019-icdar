@@ -29,7 +29,7 @@ Slides: https://hackmd.io/@6BN9tdLhQSWPUeUaTvNkaw/SyiQKUCUH
 
 ---
 
-<!-- .slide: data-background="https://i.kinja-img.com/gawker-media/image/upload/s--bkH_Ymo7--/c_scale,f_auto,fl_progressive,q_80,w_800/ajw6qfdhxt5e4ltqqm4c.jpg" -->
+<!-- .slide: data-background="https://raw.githubusercontent.com/kba/2019-icdar/master/ajw6qfdhxt5e4ltqqm4c.jpg?token=AACCXVYDRIMEQMRIPFGF6525RLUU2" -->
 
 <div style="font-family: monospace; white-space: pre; font-size: 2.4em">
        <strong class="kb-hi">O</strong>cropus            
@@ -42,7 +42,7 @@ tessera<strong class="kb-hi">ct</strong>
 
 ### OCRopus
 
-![](https://camo.githubusercontent.com/b2f37cff3fbe6d987d1e333de9c717226f064bf5/687474703a2f2f6d61646d2e64666b692e64652f5f6d656469612f6f63726f7075732e706e67)
+![](https://github.com/kba/2019-icdar/raw/master/687474703a2f2f6d61646d2e64666b692e64652f5f6d656469612f6f63726f7075732e706e67)
 
 * @tmbdev since 2007 (ocropy: 2010)
 * Standout features:
@@ -53,7 +53,7 @@ tessera<strong class="kb-hi">ct</strong>
 
 ### kraken
 
-![](https://miro.medium.com/max/440/1*3Trbay07WLA99_czXxn_yA.jpeg)
+![](https://raw.githubusercontent.com/kba/2019-icdar/master/1*3Trbay07WLA99_czXxn_yA.jpeg?token=AACCXVYDRIMEQMRIPFGF6525RLUU2)
 
 * @mittagessen since 2015
 * Standout features:
